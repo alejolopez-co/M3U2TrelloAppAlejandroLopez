@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Kanban App</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanban App</title>
+  <!-- Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
 </head>
-<body>
 
-<div class="drag-container"></div>
-<div class="board">
-  <div class="board-column todo">
-    <div class="board-column-container">
-      <div class="board-column-header">Todo</div>
-      <div class="board-column-content-wrapper">
-        <div class="board-column-content">
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>1</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>2</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>3</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>4</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>5</div></div>
+<body id="app">
+  <div class="card">
+    <!-- Header LOGO -->
+    <div class="card-header">
+      <div class="container-fluid">
+        <div class="row row-cols-12 align-items-center">
+          <div class="col-10">
+            <img src="./img/trello.svg" alt="Logo Kanban App" height="60" />
+          </div>
+          <div class="col-2">
+            <div class="d-grid gap-1 d-md-flex justify-content-md-end">
+              <button type="button" class="btn btn-primary" id="btnNewTask">
+                + New task
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="board-column working">
-    <div class="board-column-container">
-      <div class="board-column-header">Working</div>
-      <div class="board-column-content-wrapper">
-        <div class="board-column-content">
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>6</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>7</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>8</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>9</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>10</div></div>
+    <div class="card-body">
+      <!-- Find Header LOGO -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <!-- Header TODO -->
+            <div class="card-header text-center text-white fw-bold bg-primary bg-opacity-75">TODO</div>
+            <!-- Find Header -->
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <!-- Header WORKING -->
+            <div class="card-header text-center text-white fw-bold bg-primary bg-opacity-75">WORKING</div>
+            <!-- Find Header -->
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <!-- Header DONE -->
+            <div class="card-header text-center text-white fw-bold bg-primary bg-opacity-75">DONE</div>
+            <!-- Find Header -->
+            <div class="card-body">
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
-  <div class="board-column done">
-    <div class="board-column-container">
-      <div class="board-column-header">Done</div>
-      <div class="board-column-content-wrapper">
-        <div class="board-column-content">
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>11</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>12</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>13</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>14</div></div>
-          <div class="board-item"><div class="board-item-content"><span>Item #</span>15</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<script src=""></script>
 
+  <!-- Boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
