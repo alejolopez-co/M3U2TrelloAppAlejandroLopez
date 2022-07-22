@@ -1,0 +1,22 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "title": "Frontend",
+            "person": "Stiwar",
+            "details": "Devlopment frontend",
+            "state": "Done",
+            "deadline": 1948120831,
+            "created": 1615352159
+        },
+        {
+            "id": 2,
+            "title": "Backend",
+            "person": "Stiwar",
+            "details": "Devlopment frontend",
+            "state": "Done",
+            "deadline": 1948120831,
+            "created": 1615352159
+        }
+    ]
+}
