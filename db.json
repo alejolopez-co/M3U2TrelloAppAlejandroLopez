@@ -4,19 +4,19 @@
             "id": 1,
             "title": "Frontend",
             "person": "Stiwar",
-            "details": "Devlopment frontend",
-            "state": "Done",
+            "details": "Development frontend",
+            "state": "DONE",
             "deadline": 1948120831,
             "created": 1615352159
         },
         {
             "id": 2,
             "title": "Backend",
-            "person": "Stiwar",
-            "details": "Devlopment frontend",
-            "state": "Done",
-            "deadline": 1948120831,
-            "created": 1615352159
+            "person": "Jhon E.",
+            "details": "Development backend",
+            "state": "TODO",
+            "deadline": 1648120831,
+            "created": 1515352159
         }
     ]
 }
