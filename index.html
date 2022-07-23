@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kanban App</title>
-  <link rel="shortcut icon" href="./img/trello.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/trello.svg" type="image/x-icon" />
   <!-- Boostrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
@@ -36,24 +36,27 @@
     <div class="card-group vh-100">
       <div class="card">
         <!-- Header TODO -->
-        <div class="card-header text-center text-bg-primary bg-opacity-75">TODO</div>
-        <!-- Find Header -->
-        <div class="card-body border-secondary">
+        <div class="card-header text-center text-bg-primary bg-opacity-75">
+          TODO
         </div>
+        <!-- Find Header -->
+        <div class="card-body border-secondary" id="todoTasks"></div>
       </div>
       <div class="card">
         <!-- Header WORKING -->
-        <div class="card-header text-center text-bg-primary bg-opacity-75">WORKING</div>
-        <!-- Find Header -->
-        <div class="card-body border-secondary">
+        <div class="card-header text-center text-bg-primary bg-opacity-75">
+          WORKING
         </div>
+        <!-- Find Header -->
+        <div class="card-body border-secondary" id="workingTasks"></div>
       </div>
       <div class="card">
         <!-- Header DONE -->
-        <div class="card-header text-center text-bg-primary bg-opacity-75">DONE</div>
-        <!-- Find Header -->
-        <div class="card-body border-secondary">
+        <div class="card-header text-center text-bg-primary bg-opacity-75">
+          DONE
         </div>
+        <!-- Find Header -->
+        <div class="card-body border-secondary" id="doneTasks"></div>
       </div>
     </div>
   </div>
@@ -70,7 +73,7 @@
           <form>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Task title:</label>
-              <input type="text" class="form-control" id="taskTitle">
+              <input type="text" class="form-control" id="taskTitle" />
             </div>
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Description:</label>
@@ -101,12 +104,13 @@
                   <li><a class="dropdown-item" href="#">1 week</a></li>
                 </ul>
               </div>
-
             </div>
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Cancel
+          </button>
           <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
@@ -114,11 +118,19 @@
   </div>
   <!-- Fin Modal -->
 
-
+  <!-- Recursos externos -->
   <!-- Boostrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+  <!-- Moment -->
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- Recursos internos -->
+  <script src="/js/api/requests.js"></script>
+  <script src="/js/helpers/dates.js"></script>
 </body>
 
 </html>
