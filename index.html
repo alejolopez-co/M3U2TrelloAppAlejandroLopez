@@ -13,7 +13,7 @@
 </head>
 
 <body id="app">
-  <div class="card vh-100">
+  <div class="card">
     <!-- Header LOGO -->
     <div class="card-header">
       <div class="container-fluid">
@@ -32,34 +32,26 @@
         </div>
       </div>
     </div>
-    <!-- Find Header LOGO -->
-    <div class="card-group vh-100">
-      <div class="card">
-        <!-- Header TODO -->
-        <div class="card-header text-center text-bg-primary bg-opacity-75">
-          TODO
-        </div>
-        <!-- Find Header -->
-        <div class="card-body border-secondary" id="todoTasks"></div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row row-cols-3">
+      <div class="col-4 text-center text-bg-primary p-3">
+        TODO
       </div>
-      <div class="card">
-        <!-- Header WORKING -->
-        <div class="card-header text-center text-bg-primary bg-opacity-75">
-          WORKING
-        </div>
-        <!-- Find Header -->
-        <div class="card-body border-secondary" id="workingTasks"></div>
+      <div class="col-4 text-center text-bg-primary p-3">
+        WORKING
       </div>
-      <div class="card">
-        <!-- Header DONE -->
-        <div class="card-header text-center text-bg-primary bg-opacity-75">
-          DONE
-        </div>
-        <!-- Find Header -->
-        <div class="card-body border-secondary" id="doneTasks"></div>
+      <div class="col-4 text-center text-bg-primary p-3">
+        DONE
       </div>
+      <div class="col" id="todoTasks"></div>
+      <div class="col" id="workingTasks"></div>
+      <div class="col" id="doneTasks"></div>
     </div>
   </div>
+
+
 
   <!-- Modal - Crear nueva tarea-->
   <div class="modal fade" id="modalNewTask" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
@@ -127,10 +119,14 @@
   <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
   <!-- Axios -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- Draggable -->
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/sortable.js"></script>
 
   <!-- Recursos internos -->
-  <script src="/js/api/requests.js"></script>
   <script src="/js/helpers/dates.js"></script>
+  <script src="/js/api/requests.js"></script>
+  <script src="/js/helpers/dragandDrop.js"></script>
+
 </body>
 
 </html>

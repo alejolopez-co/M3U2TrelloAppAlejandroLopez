@@ -15,12 +15,15 @@ const showAllTasks = (data) => {
 // Crear tareas dinamicamente
 const createTask = (task) => {
   
+  // Creamos la estructura de las tarjetas desde el JS
+  let newTask = document.createElement("article");
+
   // Crear el contenedor de la tarea
-  let newTask = document.createElement("div");
+  let taskContainer = document.createElement("div");
   // Establecer el tamaño máximo del contenedor
-  newTask.style.maxWidth = "18rem;";
+  taskContainer.style.maxWidth = "18rem;";
   // Definir la propiedad clase del contenedor de la tarjeta
-  newTask.className = "card border-info mb-3";
+  taskContainer.className = "card border-info mb-3";
 
   // Crear el Header de la tarea
   let taskTitle = document.createElement("div");
@@ -68,9 +71,12 @@ const createTask = (task) => {
   newBody.appendChild(taskDeadline);
   newBody.appendChild(taskCreated);
 
-  // Adicionar a cada tarea los elementos hijos
-  newTask.appendChild(taskTitle);
-  newTask.appendChild(newBody)
+  // Adicionar a cada contenedor de tareas los elementos hijos
+  taskContainer.appendChild(taskTitle);
+  taskContainer.appendChild(newBody);
+
+  // Adicionar a cada nueva tarea los elementos hijos
+  newTask.appendChild(taskContainer);
 
   // Obtener el elemento de las columnas HMTL a traves del id
   let columnToDo = document.querySelector("#todoTasks");
