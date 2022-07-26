@@ -29,7 +29,6 @@ const createTask = (task) => {
   let taskTitle = document.createElement("div");
   // Adicionar la propiedad clase del Header
   taskTitle.className = "card-header bg-info bg-opacity-10", 
-  //taskTitle.classList.add("card-header");
   // Establecer el titulo de la tarea en el HTML 
   taskTitle.innerHTML = task.title;
 
